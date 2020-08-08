@@ -37,7 +37,7 @@ services:
     container_name: grafana
     restart: always
     environment:
-      - "GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource"
+      - "GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource, raintank-worldping-app"
     ports:
       - 3000:3000
     networks:
